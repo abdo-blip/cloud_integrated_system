@@ -60,6 +60,32 @@ cloud_integrated_system/
 
 ---
 
+## 📸 Project Showcase & Evaluation Metrics
+
+Here is a visual overview of the application in action, along with system performance and testing metrics:
+
+### 1. Running Application
+The fully functional web interface operating through the microservices architecture.
+![Running App](images/running_app.jpeg)
+
+### 2. Docker Containers
+A look into the containerized environment showing the isolated running microservices.
+![Docker Containers](images/docker_container.jpeg)
+
+### 3. API Testing & Gateway Routing
+Successful API tests demonstrating the Nginx gateway correctly routing to backend services.
+![API Test](images/api_test.jpeg)
+
+### 4. Latency Test Results
+Validation of the artificial tail latency simulation used to test system resilience.
+![Latency Test](images/latency_test.jpeg)
+
+### 5. Resource Consumption Matrix
+Live tracking of system resources, highlighting the efficiency of the containerized setup.
+![Resource Consumption](images/resource_consumption_metrics.jpeg)
+
+---
+
 ## 🛠️ How to Run
 
 1. Ensure **Docker** and **Docker Compose** are installed on your machine.
