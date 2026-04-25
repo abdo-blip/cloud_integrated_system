@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudNative Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">☁️ NativeStore</div>
+        <div class="cart-icon" id="cart-toggle">
+            🛒 Cart <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Engineered for the Cloud.</h1>
+            <p>Discover products seamlessly served through a microservices architecture.</p>
+        </section>
+
+        <section class="products-container" id="products-list">
+            <!-- Products will be injected here via JS -->
+            <div class="loader">Loading products...</div>
+        </section>
+    </main>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-btn" id="close-cart">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items injected here -->
+        </div>
+        <div class="cart-footer">
+            <button class="checkout-btn" onclick="clearCart()">Checkout (Clear)</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
